@@ -3,6 +3,6 @@
 	padding:$baseline*2;
 	@include breakpoint(md) {
 		margin-top:20px;
-		padding:$baseline;
+		padding:$baseline*2 $baseline;
 	}
 }
