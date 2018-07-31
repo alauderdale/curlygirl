@@ -1,6 +1,7 @@
 .form-panel{
 	background:tint($primary-color,95%);
 	padding:$baseline*2;
+	border-radius:8px;
 	@include breakpoint(md) {
 		margin-top:20px;
 		padding:$baseline*2 $baseline;

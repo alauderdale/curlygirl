@@ -1,6 +1,6 @@
 section{
 	padding:$baseline*2 0 ;
-	@include breakpoint(sm) {
+	@include breakpoint(md) {
 		padding: 0 ;
 	}
 }
