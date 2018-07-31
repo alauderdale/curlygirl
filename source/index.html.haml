@@ -29,20 +29,7 @@
 								Yours free
 						%p
 							When you fill out this form
-					%form
-						.form-group
-							%label
-								Email address
-							%input.form-control{:placeholder => "e.g. jane@doe.com", :type => "email"}
-						.form-group
-							%label
-								My no 1. fine curly hair question is:
-							%textarea.form-control{ :placeholder => "Your question", :rows=>"2"}
-
-
-
-						%button.btn.btn-primary.btn-lg.btn-block{:type => "submit"} 
-							GET MY FREE EBOOK
+					= partial "shared/form"
 			.col-lg-7.order-lg-1
 				.row
 					.col-lg-4.order-lg-2

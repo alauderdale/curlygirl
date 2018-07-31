@@ -1,0 +1,45 @@
+%form#contact-form{:action => "/contact.php", :method => "post", :role => "form"}
+  .messages
+  .controls
+    .row
+      .col-md-6
+        .form-group
+          %label{:for => "form_name"} Firstname *
+          %input#form_name.form-control{"data-error" => "Firstname is required.", :name => "name", :placeholder => "Please enter your firstname *", :required => "required", :type => "text"}/
+          .help-block.with-errors
+      .col-md-6
+        .form-group
+          %label{:for => "form_lastname"} Lastname *
+          %input#form_lastname.form-control{"data-error" => "Lastname is required.", :name => "surname", :placeholder => "Please enter your lastname *", :required => "required", :type => "text"}/
+          .help-block.with-errors
+    .row
+      .col-md-6
+        .form-group
+          %label{:for => "form_email"} Email *
+          %input#form_email.form-control{"data-error" => "Valid email is required.", :name => "email", :placeholder => "Please enter your email *", :required => "required", :type => "email"}/
+          .help-block.with-errors
+      .col-md-6
+        .form-group
+          %label{:for => "form_need"} Please specify your need *
+          %select#form_need.form-control{"data-error" => "Please specify your need.", :name => "need", :required => "required"}
+            %option{:value => ""}
+            %option{:value => "Request quotation"} Request quotation
+            %option{:value => "Request order status"} Request order status
+            %option{:value => "Request copy of an invoice"} Request copy of an invoice
+            %option{:value => "Other"} Other
+          .help-block.with-errors
+    .row
+      .col-md-12
+        .form-group
+          %label{:for => "form_message"} Message *
+          %textarea#form_message.form-control{"data-error" => "Please, leave us a message.", :name => "message", :placeholder => "Message for me *", :required => "required", :rows => "4"}
+          .help-block.with-errors
+      .col-md-12
+        %input.btn.btn-success.btn-send{:type => "submit", :value => "Send message"}/
+    .row
+      .col-md-12
+        %p.text-muted
+          %strong *
+          These fields are required. Contact form template by
+          = succeed "." do
+            %a{:href => "https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form", :target => "_blank"} Bootstrapious
