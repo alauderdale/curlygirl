@@ -1,0 +1,64 @@
+%section
+	.container
+		.row
+			.col-lg-12
+				.text-center
+					%img.logo{:src=>"/images/logo.svg"}
+%section
+	.container
+		.row
+			.col-lg-12
+				.text-center
+					%h1
+						Coming Aug 2018: 
+						%strong
+							The Fine Curls Bible
+					%h2.primary-text-color.no-margin-bottom
+						%em
+							12 commandments for better curls in 30 days
+%section
+	.container
+		.row
+			.col-lg-5.order-lg-2
+				.form-panel
+					.text-center
+						%h3
+							%strong.line-through
+								$48.00
+							%em
+								Yours free
+						%p
+							When you fill out this form
+					%form
+						.form-group
+							%label
+								Email address
+							%input.form-control{:placeholder => "e.g. jane@doe.com", :type => "email"}
+						.form-group
+							%label
+								My no 1. fine curly hair question is:
+							%textarea.form-control{ :placeholder => "Your question", :rows=>"4"}
+
+
+
+						%button.btn.btn-primary.btn-lg.btn-block{:type => "submit"} 
+							Submit
+			.col-lg-7.order-lg-1
+				.row
+					.col-lg-4.order-lg-2
+						.text-center
+							%img.max-width.book-img{:src=>"/images/book.png", :width=>"162px"}
+					.col-lg-8.order-lg-1
+						%h3
+							Finally, a book just for women with fine curls!
+						%p
+							We can’t wait to share with you the long awaited definitive guide to fine curly hair. Simply tell us your no. 1 fine curly hair question and recieve a FREE copy of the Fine Curls Bible, delivered directly to your inbox the second it is released.
+						%p
+							%strong
+								We guarentee:
+						%ul.check-list.list-unstyled.padding-bottom
+							-4.times do
+								%li
+									%img.half-margin-right{:src=>"/images/check.svg"}
+									%strong
+										=lorem.words(4)

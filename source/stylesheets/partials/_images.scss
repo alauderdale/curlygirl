@@ -1,0 +1,13 @@
+.book-img{
+	@include breakpoint(md) {
+		width:100px;
+		padding:10px 0;
+	}
+}
+
+.logo{
+	@include breakpoint(md) {
+		width:150px;
+		padding:20px 0;
+	}
+}

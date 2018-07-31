@@ -1,0 +1,12 @@
+.btn-primary{
+	background:$secondary-color;
+	border-color:$secondary-color;
+	&:hover{
+		background:shade($secondary-color,10%);
+		border-color:shade($secondary-color,10%);
+	}
+	&:active{
+		background:shade($secondary-color,30%)!important;
+		border-color:shade($secondary-color,30%)!important;
+	}
+}

@@ -1,0 +1,211 @@
+// typography baselines and @font face setups
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700');
+
+//imports
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('../font/socialico-webfont.eot');
+    src: url('../font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/socialico-webfont.woff') format('woff'),
+         url('../font/socialico-webfont.ttf') format('truetype'),
+         url('../font/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'socialico_plusregular';
+    src: url('../font/socialico_plus-webfont.woff2') format('woff2'),
+         url('../font/socialico_plus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+//text transforms
+
+.text-uppercase{
+  text-transform:uppercase;
+}
+
+//text colors
+
+.extra-light-text-color{
+  color:$extra-light-text-color;
+}
+
+.light-text-color{
+  color:$light-text-color;
+}
+
+.text-color{
+  color:$text-color;
+}
+
+.dark-text-color{
+  color:$dark-text-color;
+}
+
+.white-text-color{
+  color:white;
+}
+
+
+
+//alerts
+
+.text-success{
+  color:$success-color;
+}
+
+.text-warning{
+  color:$warning-color;
+}
+
+.text-danger{
+  color:$danger-color;
+}
+
+//links
+
+.link-color{
+  color:$link-color;
+}
+
+
+
+
+//font families
+
+
+
+.regular-font{
+    font-weight:400;
+}
+
+.medium-font{
+    font-weight:600;
+}
+
+.bold-font{
+    font-weight:700;
+}
+
+.extra-bold-font{
+    font-weight:800;
+}
+
+
+
+//social
+
+.social-font-name{
+  font-family:$social-font-name;
+}
+
+
+//font color
+
+.primary-text-color{
+  color:$primary-color!important;
+}
+
+.secondary-text-color{
+  color:$secondary-color!important;
+}
+
+
+
+//font size
+
+.micro-text{
+  font-size:0.7rem;
+}
+
+
+//font base
+
+h1{
+  font-size:38px;
+  line-height:42px;
+  font-family:$regular-font-name;
+  @include breakpoint(sm) {
+    font-size:28px;
+    line-height:32px;
+  }
+}
+
+h2{
+  font-size:28px;
+  line-height:41px;
+  font-family:$regular-font-name;
+  @include breakpoint(sm) {
+    font-size:18px;
+    line-height:22px;
+  }
+}
+
+h3{
+  font-size:27px;
+  line-height:32px;
+  font-family:$regular-font-name;
+  @include breakpoint(sm) {
+    font-size:21px;
+    line-height:24px;
+  }
+}
+
+h4{
+  font-size:18px;
+  line-height:24px;
+  text-transform:uppercase;
+  font-family:$regular-font-name;
+}
+
+h5{
+  font-size:16px;
+  line-height:22px;
+  font-family:$regular-font-name;
+}
+
+h6{
+  font-size:14px;
+  line-height:23px;
+  font-family:$regular-font-name;
+}
+
+p, li{
+  font-size:$base-font-size;
+  line-height: 24px;
+  @include breakpoint(sm) {
+    font-size:14px;
+    line-height:18px;
+  }
+}
+
+li{
+  margin:8px 0;
+}
+
+
+//lists
+
+
+
+//mobile
+
+  @include breakpoint(md) {
+
+
+  }
+
+
+  @include breakpoint(sm) {
+
+
+  }
