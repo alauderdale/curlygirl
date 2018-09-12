@@ -3,21 +3,22 @@
  *  CONFIGURE EVERYTHING HERE
  */
 
+
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <demo@domain.com>';
+$from = 'The Finest Curls <info@finestcurls.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <alauderdale@mac.com>';
+$sendTo = 'alauderdale@mac.com, huppcm@gmail.com';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'New message from FinestCurls contact form';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
+$fields = array('email' => 'Email', 'message' => 'Message'); 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Thank you georgeous! You will recieve your free ebook when it is released later this month.';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';

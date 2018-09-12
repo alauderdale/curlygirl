@@ -219,6 +219,9 @@ li {
   .btn-primary:active {
     background: #ac7419 !important;
     border-color: #ac7419 !important; }
+  .btn-primary.disabled {
+    background: #F5A623;
+    border-color: #F5A623; }
 
 .margin-auto {
   margin: 0 auto; }
@@ -415,6 +418,18 @@ section {
 label {
   font-size: 14px;
   font-weight: 600; }
+
+.alert {
+  border: none;
+  font-size: 14px;
+  border-radius: 0px;
+  font-weight: 600; }
+  .alert.alert-success {
+    background: #a199dd;
+    color: white; }
+
+.help-block ul li {
+  font-size: 13px; }
 
 @media (max-width: 992px) {
   .book-img {

@@ -13,6 +13,35 @@ Because some curls are just fine - FinestCurls.com | FinestCurls.com
 <link href="stylesheets/style.css" rel="stylesheet" />
 <link href='images/favicon.ico' rel='shortcut icon'>
 <script src="bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script><script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="javascripts/lib/smooth-scroll.js"></script><script src="javascripts/scripts.js"></script>
+<!-- google analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async='' src='https://www.googletagmanager.com/gtag/js?id=UA-123146355-1'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'UA-123146355-1');
+  gtag('config', 'AW-934570432');
+</script>
+<!--
+Event snippet for Contact form submitted conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button.
+-->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-934570432/CqipCKfC34YBEMDT0b0D',
+        'event_callback': callback
+    });
+    return false;
+  }
+</script>
 
 <body class='index' data-offset='80' data-spy='scroll' data-target='#primary-nav'>
 
@@ -35,14 +64,14 @@ Because some curls are just fine - FinestCurls.com | FinestCurls.com
 <div class='col-lg-12'>
 <div class='text-center'>
 <h1>
-Coming Aug 2018:
+Free ebook:
 <strong>
-The Fine Curls Bible
+Fine Curly Care Guide
 </strong>
 </h1>
 <h2 class='primary-text-color no-margin-bottom'>
 <em>
-12 commandments for better curls in 30 days
+12 Commandments for Fine, Curly Hair
 </em>
 </h2>
 </div>
@@ -58,7 +87,7 @@ The Fine Curls Bible
 <div class='text-center'>
 <h3>
 <strong class='line-through'>
-$48.00
+$19.99
 </strong>
 <em>
 Yours free
@@ -71,65 +100,17 @@ When you fill out this form
 <form action='/contact.php' id='contact-form' method='post' role='form'>
 <div class='messages'></div>
 <div class='controls'>
-<div class='row'>
-<div class='col-md-6'>
 <div class='form-group'>
-<label for='form_name'>Firstname *</label>
-<input class='form-control' data-error='Firstname is required.' id='form_name' name='name' placeholder='Please enter your firstname *' required='required' type='text'>
+<label for='form_email'>Email</label>
+<input class='form-control' data-error='Valid email is required.' id='form_email' name='email' placeholder='e.g. jane@doe.com' required='required' type='email'>
 <div class='help-block with-errors'></div>
 </div>
-</div>
-<div class='col-md-6'>
 <div class='form-group'>
-<label for='form_lastname'>Lastname *</label>
-<input class='form-control' data-error='Lastname is required.' id='form_lastname' name='surname' placeholder='Please enter your lastname *' required='required' type='text'>
+<label for='form_message'>What's your #1 fine curly hair question?</label>
+<textarea class='form-control' data-error='Please, leave us a message.' id='form_message' name='message' placeholder='Your question here...' required='required' rows='4'></textarea>
 <div class='help-block with-errors'></div>
 </div>
-</div>
-</div>
-<div class='row'>
-<div class='col-md-6'>
-<div class='form-group'>
-<label for='form_email'>Email *</label>
-<input class='form-control' data-error='Valid email is required.' id='form_email' name='email' placeholder='Please enter your email *' required='required' type='email'>
-<div class='help-block with-errors'></div>
-</div>
-</div>
-<div class='col-md-6'>
-<div class='form-group'>
-<label for='form_need'>Please specify your need *</label>
-<select class='form-control' data-error='Please specify your need.' id='form_need' name='need' required='required'>
-<option value=''></option>
-<option value='Request quotation'>Request quotation</option>
-<option value='Request order status'>Request order status</option>
-<option value='Request copy of an invoice'>Request copy of an invoice</option>
-<option value='Other'>Other</option>
-</select>
-<div class='help-block with-errors'></div>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class='col-md-12'>
-<div class='form-group'>
-<label for='form_message'>Message *</label>
-<textarea class='form-control' data-error='Please, leave us a message.' id='form_message' name='message' placeholder='Message for me *' required='required' rows='4'></textarea>
-<div class='help-block with-errors'></div>
-</div>
-</div>
-<div class='col-md-12'>
-<input class='btn btn-success btn-send' type='submit' value='Send message'>
-</div>
-</div>
-<div class='row'>
-<div class='col-md-12'>
-<p class='text-muted'>
-<strong>*</strong>
-These fields are required. Contact form template by
-<a href='https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form' target='_blank'>Bootstrapious</a>.
-</p>
-</div>
-</div>
+<input class='btn btn-primary btn-send btn-lg btn-block' onclick='gtag_report_conversion()' type='submit' value='GET MY FREE EBOOK'>
 </div>
 </form>
 
@@ -144,40 +125,31 @@ These fields are required. Contact form template by
 </div>
 <div class='col-lg-8 order-lg-1'>
 <h3 class='text-center-sm'>
-Finally, a book just for women with fine curls!
+Finally, a book just for
+<br>
+women with fine, curly hair!
 </h3>
 <p>
-We can’t wait to share with you the long awaited definitive guide to fine curly hair. Simply tell us your no. 1 fine curly hair question and recieve a FREE copy of the Fine Curls Bible, delivered directly to your inbox the second it is released.
+Fine, curly hair is one of the most challenging hair types out there.
+That’s why we can’t wait to share with you the long awaited definitive guide to fine, curly hair. Just tell us your number one fine, curly hair question and receive a FREE copy of the Fine Curls Care Guide, delivered directly to your inbox, as soon as it is released.
 </p>
 <p>
 <strong>
-We guarentee:
+With this book, you will finally learn:
 </strong>
 </p>
 <ul class='check-list list-unstyled padding-bottom'>
 <li>
-<img class='half-margin-right' src='images/check.png' width='26px'>
-<strong>
-ut velit ea sunt
-</strong>
+The best types of products for your hair type
 </li>
 <li>
-<img class='half-margin-right' src='images/check.png' width='26px'>
-<strong>
-omnis vitae iste eveniet
-</strong>
+Homemade product recipes
 </li>
 <li>
-<img class='half-margin-right' src='images/check.png' width='26px'>
-<strong>
-eum nostrum voluptatem accusantium
-</strong>
+How best to maintain volume and definition
 </li>
 <li>
-<img class='half-margin-right' src='images/check.png' width='26px'>
-<strong>
-ea ad id sit
-</strong>
+The best haircuts for you hair type
 </li>
 </ul>
 </div>

@@ -1,0 +1,18 @@
+.alert{
+	border:none;
+	font-size:14px;
+	border-radius:0px;
+	font-weight:600;
+	&.alert-success{
+		background:tint($primary-color,50%);
+		color:white;
+	}
+}
+
+.help-block{
+	ul{
+		li{
+			font-size:13px;
+		}
+	}
+}

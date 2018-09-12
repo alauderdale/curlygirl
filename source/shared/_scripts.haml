@@ -11,3 +11,31 @@
 = stylesheet_link_tag "style"
 %link{href: "/images/favicon.ico", rel: "shortcut icon"}
 = javascript_include_tag"../bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js","https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js", "../bower_components/bootstrap/dist/js/bootstrap.min.js","../javascripts/lib/smooth-scroll.js", "scripts"
+
+/ google analytics
+/ Global site tag (gtag.js) - Google Analytics
+%script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-123146355-1"}
+:javascript
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123146355-1');
+  gtag('config', 'AW-934570432');
+
+/
+  Event snippet for Contact form submitted conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button.
+:javascript
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-934570432/CqipCKfC34YBEMDT0b0D',
+        'event_callback': callback
+    });
+    return false;
+  }

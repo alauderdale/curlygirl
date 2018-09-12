@@ -14,4 +14,8 @@
 		background:shade($secondary-color,30%)!important;
 		border-color:shade($secondary-color,30%)!important;
 	}
+	&.disabled{
+		background:$secondary-color;
+		border-color:$secondary-color;
+	}
 }
